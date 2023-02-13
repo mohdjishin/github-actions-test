@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: echo a string
         run: echo "Hello World"
+      - name: echo a string with a variable
+        run: echo "Hello ${{ github.event_name }}"
       - name: multiline script
         run: |
           echo "Hello"
