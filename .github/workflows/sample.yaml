@@ -7,10 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: 2echo "Hello World"
-      - name: echo a string with a variable
-        run: echo "Hello ${{ github.event_name }}"
-      - name: multiline script
+        run: echo "Hello World"
+      - name : multiline
         run: |
-          echo "Hello"
-          echo "World"
+          node
+          nmp -v
+      - name: python command
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
