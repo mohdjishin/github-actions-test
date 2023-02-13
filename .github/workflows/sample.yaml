@@ -13,13 +13,13 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install nodejs -y
-          sudo apt-get install npm -y
+     
           sudo apt-get install python3 -y
 
       - name : multiline
         run: |
-          node
-          nmp -v
+          node -v
+     
       - name: python command
         run: |
           import platform
