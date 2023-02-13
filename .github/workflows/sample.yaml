@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: echo "Hello World"
+        run: 2echo "Hello World"
       - name: echo a string with a variable
         run: echo "Hello ${{ github.event_name }}"
       - name: multiline script
