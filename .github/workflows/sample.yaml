@@ -8,6 +8,14 @@ jobs:
     steps:
       - name: echo a string
         run: echo "Hello World"
+
+      - name: installtion
+        run: |
+          sudo apt-get update
+          sudo apt-get install nodejs -y
+          sudo apt-get install npm -y
+          sudo apt-get install python python3 -y
+
       - name : multiline
         run: |
           node
