@@ -1,7 +1,10 @@
 name: shell command
 
-on: [push]
-
+# on: [push]
+# on:
+#   schedule:
+#     - cron: '0 0 * * *'
+on: [pull_request]
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
