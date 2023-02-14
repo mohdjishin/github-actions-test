@@ -10,6 +10,7 @@ jobs:
 
       - name: List Files
         run: |
+
           pwd
           ls -la
           echo $GITHUB_SHA
@@ -17,7 +18,7 @@ jobs:
           echo $GITHUB_WORKFLOW
           echo ${{github.token}}
           # git clone git@github:${{github.repository}}.git
-
+          ls
 
       - name: Checkout
         uses: actions/checkout@v3
